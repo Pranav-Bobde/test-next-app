@@ -6,7 +6,7 @@ export default async function middleware(request: NextRequest) {
 
   const host = request.nextUrl.host;
 
-  if (host === "pranavbobde.com")
+  if (host === "https://beta.nextjs.org")
     return NextResponse.redirect("https://beta.nextjs.org");
 
   return NextResponse.next();
